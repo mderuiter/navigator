@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -19,6 +19,8 @@
 		F179BA8923D09AE3004DAABC /* CreateAccountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F179BA8823D09AE3004DAABC /* CreateAccountViewController.xib */; };
 		F179BA8D23D09E41004DAABC /* CreatePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F179BA8C23D09E41004DAABC /* CreatePasswordViewController.swift */; };
 		F179BA8F23D09E4A004DAABC /* CreatePasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F179BA8E23D09E4A004DAABC /* CreatePasswordViewController.xib */; };
+		F179BA9223D0A4A8004DAABC /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = F179BA9123D0A4A8004DAABC /* Swinject */; };
+		F179BA9623D0A4D7004DAABC /* RegistrationFlowContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F179BA9523D0A4D7004DAABC /* RegistrationFlowContainer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,7 @@
 		F179BA8823D09AE3004DAABC /* CreateAccountViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateAccountViewController.xib; sourceTree = "<group>"; };
 		F179BA8C23D09E41004DAABC /* CreatePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePasswordViewController.swift; sourceTree = "<group>"; };
 		F179BA8E23D09E4A004DAABC /* CreatePasswordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreatePasswordViewController.xib; sourceTree = "<group>"; };
+		F179BA9523D0A4D7004DAABC /* RegistrationFlowContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationFlowContainer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F179BA9223D0A4A8004DAABC /* Swinject in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -165,7 +169,8 @@
 		F179BA8023D09A08004DAABC /* Flows */ = {
 			isa = PBXGroup;
 			children = (
-				F179BA8123D09A1B004DAABC /* RegistrationFlowCoordinator.swift */,
+				F179BA9423D0A4BA004DAABC /* Containers */,
+				F179BA9323D0A4B4004DAABC /* Coordinator */,
 			);
 			path = Flows;
 			sourceTree = "<group>";
@@ -197,6 +202,22 @@
 			path = CreatePasswordViewController;
 			sourceTree = "<group>";
 		};
+		F179BA9323D0A4B4004DAABC /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				F179BA8123D09A1B004DAABC /* RegistrationFlowCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		F179BA9423D0A4BA004DAABC /* Containers */ = {
+			isa = PBXGroup;
+			children = (
+				F179BA9523D0A4D7004DAABC /* RegistrationFlowContainer.swift */,
+			);
+			path = Containers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -213,6 +234,9 @@
 			dependencies = (
 			);
 			name = Navigator;
+			packageProductDependencies = (
+				F179BA9123D0A4A8004DAABC /* Swinject */,
+			);
 			productName = SwiftyFlowImplementationExample;
 			productReference = F179BA5923D08E2C004DAABC /* Navigator.app */;
 			productType = "com.apple.product-type.application";
@@ -241,6 +265,9 @@
 				Base,
 			);
 			mainGroup = F179BA5023D08E2C004DAABC;
+			packageReferences = (
+				F179BA9023D0A4A8004DAABC /* XCRemoteSwiftPackageReference "Swinject" */,
+			);
 			productRefGroup = F179BA5A23D08E2C004DAABC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -270,6 +297,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F179BA9623D0A4D7004DAABC /* RegistrationFlowContainer.swift in Sources */,
 				F179BA8723D09ACA004DAABC /* CreateAccountViewController.swift in Sources */,
 				F179BA6123D08E2C004DAABC /* LoginViewController.swift in Sources */,
 				F179BA5D23D08E2C004DAABC /* AppDelegate.swift in Sources */,
@@ -467,6 +495,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F179BA9023D0A4A8004DAABC /* XCRemoteSwiftPackageReference "Swinject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/Swinject";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F179BA9123D0A4A8004DAABC /* Swinject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F179BA9023D0A4A8004DAABC /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = Swinject;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F179BA5123D08E2C004DAABC /* Project object */;
 }

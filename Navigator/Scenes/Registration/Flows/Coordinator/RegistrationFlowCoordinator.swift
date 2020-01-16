@@ -7,31 +7,34 @@
 //
 
 import UIKit
+import Swinject
 
 class RegistrationFlowCoordinator: FlowCoordinatorProtocol {
     
     // MARK: - Properties
-    let presentingViewController: UIViewController
-    var navigationController: UINavigationController?
-    
+    private let presentingViewController: UIViewController
+    private var navigationController: UINavigationController?
     private var flowCompletion: ((String) -> Void)
+    private var container: Container?
     
+    // MARK: - DataStore
     private var username: String?
     private var password: String?
     
     // MARK: - Initializers
     init(presentingViewController: UIViewController, completion: @escaping (String) -> Void) {
+        self.container = RegistrationFlowResolver.container
         self.presentingViewController = presentingViewController
         self.flowCompletion = completion
     }
     
     func startFlow() {
-        let createAccountViewController = CreateAccountViewController()
-        createAccountViewController.delegate = self
-        let navigationController = UINavigationController(rootViewController: createAccountViewController)
-        
-        self.navigationController = navigationController
-        self.presentingViewController.present(navigationController, animated: true)
+        if let createAccountViewController = container?.resolve(CreateAccountViewController.self) {
+            createAccountViewController.delegate = self
+            let navigationController = UINavigationController(rootViewController: createAccountViewController)
+            self.navigationController = navigationController
+            self.presentingViewController.present(navigationController, animated: true)
+        }
     }
     
     func endFlow() {
