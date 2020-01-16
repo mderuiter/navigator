@@ -15,6 +15,10 @@
 		F179BA7823D09595004DAABC /* FlowCoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F179BA7723D09595004DAABC /* FlowCoordinatorProtocol.swift */; };
 		F179BA7C23D097FE004DAABC /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F179BA7B23D097FE004DAABC /* LoginViewController.xib */; };
 		F179BA8223D09A1B004DAABC /* RegistrationFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F179BA8123D09A1B004DAABC /* RegistrationFlowCoordinator.swift */; };
+		F179BA8723D09ACA004DAABC /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F179BA8623D09ACA004DAABC /* CreateAccountViewController.swift */; };
+		F179BA8923D09AE3004DAABC /* CreateAccountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F179BA8823D09AE3004DAABC /* CreateAccountViewController.xib */; };
+		F179BA8D23D09E41004DAABC /* CreatePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F179BA8C23D09E41004DAABC /* CreatePasswordViewController.swift */; };
+		F179BA8F23D09E4A004DAABC /* CreatePasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F179BA8E23D09E4A004DAABC /* CreatePasswordViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,10 @@
 		F179BA7723D09595004DAABC /* FlowCoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowCoordinatorProtocol.swift; sourceTree = "<group>"; };
 		F179BA7B23D097FE004DAABC /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = LoginViewController.xib; path = Navigator/Scenes/Registration/ViewControllers/LoginViewController/LoginViewController.xib; sourceTree = SOURCE_ROOT; };
 		F179BA8123D09A1B004DAABC /* RegistrationFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationFlowCoordinator.swift; sourceTree = "<group>"; };
+		F179BA8623D09ACA004DAABC /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
+		F179BA8823D09AE3004DAABC /* CreateAccountViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateAccountViewController.xib; sourceTree = "<group>"; };
+		F179BA8C23D09E41004DAABC /* CreatePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePasswordViewController.swift; sourceTree = "<group>"; };
+		F179BA8E23D09E4A004DAABC /* CreatePasswordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreatePasswordViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +155,8 @@
 		F179BA7E23D09958004DAABC /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				F179BA8B23D09E36004DAABC /* CreatePasswordViewController */,
+				F179BA8523D09AB7004DAABC /* CreateAccountViewController */,
 				F179BA8423D09A36004DAABC /* LoginViewController */,
 			);
 			path = ViewControllers;
@@ -167,6 +177,24 @@
 				F179BA7B23D097FE004DAABC /* LoginViewController.xib */,
 			);
 			path = LoginViewController;
+			sourceTree = "<group>";
+		};
+		F179BA8523D09AB7004DAABC /* CreateAccountViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F179BA8623D09ACA004DAABC /* CreateAccountViewController.swift */,
+				F179BA8823D09AE3004DAABC /* CreateAccountViewController.xib */,
+			);
+			path = CreateAccountViewController;
+			sourceTree = "<group>";
+		};
+		F179BA8B23D09E36004DAABC /* CreatePasswordViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F179BA8C23D09E41004DAABC /* CreatePasswordViewController.swift */,
+				F179BA8E23D09E4A004DAABC /* CreatePasswordViewController.xib */,
+			);
+			path = CreatePasswordViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -227,8 +255,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F179BA8923D09AE3004DAABC /* CreateAccountViewController.xib in Resources */,
 				F179BA6923D08E30004DAABC /* LaunchScreen.storyboard in Resources */,
 				F179BA6623D08E30004DAABC /* Assets.xcassets in Resources */,
+				F179BA8F23D09E4A004DAABC /* CreatePasswordViewController.xib in Resources */,
 				F179BA7C23D097FE004DAABC /* LoginViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -240,10 +270,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F179BA8723D09ACA004DAABC /* CreateAccountViewController.swift in Sources */,
 				F179BA6123D08E2C004DAABC /* LoginViewController.swift in Sources */,
 				F179BA5D23D08E2C004DAABC /* AppDelegate.swift in Sources */,
 				F179BA7823D09595004DAABC /* FlowCoordinatorProtocol.swift in Sources */,
 				F179BA5F23D08E2C004DAABC /* SceneDelegate.swift in Sources */,
+				F179BA8D23D09E41004DAABC /* CreatePasswordViewController.swift in Sources */,
 				F179BA8223D09A1B004DAABC /* RegistrationFlowCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

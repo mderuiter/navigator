@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CreateAccountViewController" customModule="Navigator" customModuleProvider="target">
+            <connections>
+                <outlet property="usernameTextField" destination="3C2-Ps-ODR" id="g8R-1a-lA2"/>
+                <outlet property="view" destination="iN0-l3-epB" id="jZb-mG-fTs"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3C2-Ps-ODR">
+                    <rect key="frame" x="25" y="386" width="364" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g4B-zN-mOb">
+                    <rect key="frame" x="25" y="433" width="364" height="30"/>
+                    <state key="normal" title="Continue"/>
+                    <connections>
+                        <action selector="actionButtonTapped:" destination="-1" eventType="touchUpInside" id="3Lo-ls-Q0i"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="g4B-zN-mOb" firstAttribute="leading" secondItem="3C2-Ps-ODR" secondAttribute="leading" id="N73-UT-7AN"/>
+                <constraint firstItem="g4B-zN-mOb" firstAttribute="top" secondItem="3C2-Ps-ODR" secondAttribute="bottom" constant="13" id="Ovm-2Y-VeC"/>
+                <constraint firstItem="3C2-Ps-ODR" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="25" id="YGL-ub-nha"/>
+                <constraint firstItem="g4B-zN-mOb" firstAttribute="trailing" secondItem="3C2-Ps-ODR" secondAttribute="trailing" id="abw-Mf-6Xn"/>
+                <constraint firstItem="3C2-Ps-ODR" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" constant="-50" id="gc3-uR-dDR"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="3C2-Ps-ODR" secondAttribute="trailing" constant="25" id="knS-za-nvv"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="133" y="154"/>
+        </view>
+    </objects>
+</document>
