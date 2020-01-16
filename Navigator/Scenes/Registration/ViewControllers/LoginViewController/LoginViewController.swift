@@ -10,6 +10,9 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
+    // MARK: - Outlets
+    @IBOutlet weak var welcomeLabel: UILabel!
+    
     // MARK: - Properties
     private var coordinator: FlowCoordinatorProtocol?
     
@@ -20,7 +23,10 @@ class LoginViewController: UIViewController {
     
     // MARK: - IBActions
     @IBAction func registerButtonPressed(_ sender: Any) {
-        self.coordinator = RegistrationFlowCoordinator(presentingViewController: self)
+        self.coordinator = RegistrationFlowCoordinator(presentingViewController: self) { [weak self] user in
+            self?.welcomeLabel.text = "Hello \(user)!"
+        }
+        
         self.coordinator?.startFlow()
     }
 }

@@ -10,6 +10,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="Navigator" customModuleProvider="target">
             <connections>
                 <outlet property="view" destination="iN0-l3-epB" id="DlI-1M-P7L"/>
+                <outlet property="welcomeLabel" destination="isw-5e-UFg" id="EXU-5k-8u4"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -30,15 +31,32 @@
                         <action selector="registerButtonPressed:" destination="-1" eventType="touchUpInside" id="7cI-rv-s4D"/>
                     </connections>
                 </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="isw-5e-UFg">
+                    <rect key="frame" x="25" y="94" width="364" height="0.0"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
+                <constraint firstItem="isw-5e-UFg" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="25" id="FFf-uL-cQf"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="isw-5e-UFg" secondAttribute="trailing" constant="25" id="ZwC-aM-5YM"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="7DO-nW-wN5" secondAttribute="trailing" constant="24" id="k83-Vx-cJr"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="7DO-nW-wN5" secondAttribute="bottom" constant="24" id="lAT-ZB-8Z9"/>
                 <constraint firstItem="7DO-nW-wN5" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="24" id="ndH-Gc-GLv"/>
+                <constraint firstItem="isw-5e-UFg" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="50" id="qHE-Tf-psE"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <point key="canvasLocation" x="133" y="154"/>
         </view>
+        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="07B-gJ-X4K">
+            <rect key="frame" x="0.0" y="0.0" width="364" height="36"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <fontDescription key="fontDescription" type="system" pointSize="30"/>
+            <nil key="textColor"/>
+            <nil key="highlightedColor"/>
+            <point key="canvasLocation" x="-242" y="-22"/>
+        </label>
     </objects>
 </document>
