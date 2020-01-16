@@ -1,5 +1,5 @@
 //
-//  RegisterViewController.swift
+//  LoginViewController.swift
 //  Navigator
 //
 //  Created by Milan de Ruiter on 16/01/2020.
@@ -8,8 +8,11 @@
 
 import UIKit
 
-class RegisterViewController: UIViewController {
+class LoginViewController: UIViewController {
 
+    // MARK: - Properties
+    private weak var coordinator: FlowCoordinatorProtocol?
+    
     // MARK: - View lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
