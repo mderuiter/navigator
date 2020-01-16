@@ -60,6 +60,8 @@ extension RegistrationFlowCoordinator: CreateAccountViewControllerDelegate {
 extension RegistrationFlowCoordinator: CreatePasswordViewControllerDelegate {
     
     func didCreatePassword(_ password: String?) {
+        self.password = password
+        
         self.flowCompletion?(username, password)
         self.navigationController?.dismiss(animated: true)
     }
