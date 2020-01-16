@@ -23,10 +23,14 @@ class LoginViewController: UIViewController {
     
     // MARK: - IBActions
     @IBAction func registerButtonPressed(_ sender: Any) {
-        self.coordinator = RegistrationFlowCoordinator(presentingViewController: self) { [weak self] username, password in
-            self?.welcomeLabel.text = "Hello \(username!)!\nPassword is set to: \(password!)"
-        }
-        
+        self.coordinator = RegistrationFlowCoordinator(presentingViewController: self, completion: showWelcomeTextFor(userName:password:))
         self.coordinator?.startFlow()
+    }
+    
+    // MARK: - Utilities
+    private func showWelcomeTextFor(userName : String?, password: String?) {
+        if let name = userName, let password = password {
+            self.welcomeLabel.text = "Hello \(name)!\nPassword is set to: \(password)"
+        }
     }
 }
