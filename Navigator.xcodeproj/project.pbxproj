@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		F179BA5D23D08E2C004DAABC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F179BA5C23D08E2C004DAABC /* AppDelegate.swift */; };
 		F179BA5F23D08E2C004DAABC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F179BA5E23D08E2C004DAABC /* SceneDelegate.swift */; };
-		F179BA6123D08E2C004DAABC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F179BA6023D08E2C004DAABC /* ViewController.swift */; };
+		F179BA6123D08E2C004DAABC /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F179BA6023D08E2C004DAABC /* RegisterViewController.swift */; };
 		F179BA6623D08E30004DAABC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F179BA6523D08E30004DAABC /* Assets.xcassets */; };
 		F179BA6923D08E30004DAABC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F179BA6723D08E30004DAABC /* LaunchScreen.storyboard */; };
 		F179BA7823D09595004DAABC /* FlowCoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F179BA7723D09595004DAABC /* FlowCoordinatorProtocol.swift */; };
+		F179BA7C23D097FE004DAABC /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F179BA7B23D097FE004DAABC /* RegisterViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F179BA5923D08E2C004DAABC /* Navigator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Navigator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F179BA5C23D08E2C004DAABC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F179BA5E23D08E2C004DAABC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F179BA6023D08E2C004DAABC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F179BA6023D08E2C004DAABC /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		F179BA6523D08E30004DAABC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F179BA6823D08E30004DAABC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F179BA6A23D08E30004DAABC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F179BA7723D09595004DAABC /* FlowCoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowCoordinatorProtocol.swift; sourceTree = "<group>"; };
+		F179BA7B23D097FE004DAABC /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = RegisterViewController.xib; path = Navigator/Protocols/RegisterViewController.xib; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +104,7 @@
 		F179BA7423D08E82004DAABC /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				F179BA6023D08E2C004DAABC /* ViewController.swift */,
+				F179BA7A23D097E2004DAABC /* Registration */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -121,6 +123,15 @@
 				F179BA7723D09595004DAABC /* FlowCoordinatorProtocol.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		F179BA7A23D097E2004DAABC /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				F179BA6023D08E2C004DAABC /* RegisterViewController.swift */,
+				F179BA7B23D097FE004DAABC /* RegisterViewController.xib */,
+			);
+			path = Registration;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,6 +194,7 @@
 			files = (
 				F179BA6923D08E30004DAABC /* LaunchScreen.storyboard in Resources */,
 				F179BA6623D08E30004DAABC /* Assets.xcassets in Resources */,
+				F179BA7C23D097FE004DAABC /* RegisterViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,7 +205,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F179BA6123D08E2C004DAABC /* ViewController.swift in Sources */,
+				F179BA6123D08E2C004DAABC /* RegisterViewController.swift in Sources */,
 				F179BA5D23D08E2C004DAABC /* AppDelegate.swift in Sources */,
 				F179BA7823D09595004DAABC /* FlowCoordinatorProtocol.swift in Sources */,
 				F179BA5F23D08E2C004DAABC /* SceneDelegate.swift in Sources */,
